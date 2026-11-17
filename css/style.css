@@ -281,3 +281,53 @@ body {
     justify-content: space-between;
     padding: 2rem;
   }
+  .features {
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem;
+  }
+
+  .feature:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .testimonial {
+    padding: 4rem 2rem;
+  }
+
+  .testimonial blockquote {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  @media (min-width: 1024px) {
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+  }
+
+  .main-nav ul {
+    gap: 2.5rem;
+  }
+
+  .hero-text {
+    padding: 5rem 4rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+
+  .hero-image {
+    min-height: 450px;
+  }
+}
