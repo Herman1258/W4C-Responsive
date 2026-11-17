@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #2c1e16;   /* Deep Espresso */
+    --color-secondary: #c87d4b; /* Warm Caramel Roast */
+    --color-bg: #faf6f2;        /* Steamed Milk Cream */
+    --color-surface: #ffffff;   /* Crisp White */
+    --color-text: #222222;      /* Dark Charcoal */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
