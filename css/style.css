@@ -166,3 +166,38 @@ body {
 .feature p {
   margin: 0;
 }
+.testimonial {
+  background: var(--color-primary);
+  color: var(--color-cream);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  position: relative;
+}
+
+.testimonial blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.testimonial p {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.testimonial footer strong {
+  display: block;
+}
+
+.testimonial footer span {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
