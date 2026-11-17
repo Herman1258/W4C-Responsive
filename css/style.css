@@ -342,3 +342,18 @@ body {
   .feature:last-child {
     grid-column: auto;
   }
+  .testimonial {
+    padding: 5rem 2rem;
+  }
+
+  .testimonial blockquote {
+    max-width: 760px;
+  }
+
+  .testimonial p {
+    font-size: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 2rem calc((100% - 1200px) / 2 + 2rem);
+  }
