@@ -103,3 +103,39 @@ body {
   .hamburger { display: none; }
   .main-nav { display: block; }
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin: 0 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary);
+  color: var(--color-cream);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover { background: var(--color-accent); color: var(--color-dark); }
+
+.hero-image {
+  min-height: 220px;
+  background: var(--color-accent);
+}
