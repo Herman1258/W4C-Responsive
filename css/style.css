@@ -36,8 +36,8 @@
   --color-dark: #2b1d14;
   --color-primary: #a4562a;
   --color-cream: #f6efe6;
-  --color-accent: #e0a458;
-}
+  --color-accent #e0a458;
+
 
 * { box-sizing: border-box; }
 
