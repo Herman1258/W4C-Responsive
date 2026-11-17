@@ -201,3 +201,34 @@ body {
   font-size: 0.9rem;
   opacity: 0.85;
 }
+.site-footer {
+  background: var(--color-dark);
+  color: var(--color-cream);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  color: var(--color-cream);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--color-accent);
+}
