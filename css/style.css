@@ -1,20 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northbound Coffee</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="logo">Northbound Coffee</a>
+
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+</body>
+</html>
 :root {
-    --color-primary: #2c1e16;   /* Deep Espresso */
-    --color-secondary: #c87d4b; /* Warm Caramel Roast */
-    --color-bg: #faf6f2;        /* Steamed Milk Cream */
-    --color-surface: #ffffff;   /* Crisp White */
-    --color-text: #222222;      /* Dark Charcoal */
+  --color-dark: #2b1d14;
+  --color-primary: #a4562a;
+  --color-cream: #f6efe6;
+  --color-accent: #e0a458;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; }
 
 body {
-    font-family: 'PT Sans', sans-serif;
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: var(--color-dark);
+  background: var(--color-cream);
+}
+
+.site-header {
+  background: var(--color-dark);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  color: var(--color-cream);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: 0;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: var(--color-cream);
+}
+
+.main-nav { display: none; }
+
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: var(--color-cream);
+  text-decoration: none;
+}
+
+.main-nav a:hover { color: var(--color-accent); }
+
+@media (min-width: 768px) {
+  .hamburger { display: none; }
+  .main-nav { display: block; }
 }
